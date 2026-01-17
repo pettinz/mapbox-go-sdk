@@ -292,6 +292,24 @@ go test ./... -v
 
 This SDK is provided as-is for working with the Mapbox API. Please refer to Mapbox's terms of service for API usage.
 
+## Releases
+
+This project uses automated semantic versioning based on [Conventional Commits](https://www.conventionalcommits.org/).
+
+### Commit Message Format
+- `feat:` New features → Minor version bump (0.X.0)
+- `fix:` Bug fixes → Patch version bump (0.0.X)
+- `BREAKING CHANGE:` or `feat!:` → Major version bump (X.0.0)
+- `docs:`, `chore:`, `test:`, `refactor:` → No release
+
+### Example
+```bash
+git commit -m "feat: add support for Maps API"  # → v0.2.0
+git commit -m "fix: correct coordinate ordering" # → v0.1.1
+```
+
+See [CHANGELOG.md](CHANGELOG.md) for all releases.
+
 ## Contributing
 
 Contributions are welcome. Please ensure all tests pass and maintain the existing code style.
